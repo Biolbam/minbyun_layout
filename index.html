@@ -11,37 +11,7 @@
 		<link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
 
 		<!-- Favicon icon-->
-		<!-- <link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/images/favicon/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/images/favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./assets/images/favicon/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-		<link
-			rel="mask-icon"
-			href="./assets/images/favicon/block-safari-pinned-tab.svg"
-			color="#8b3dff"
-		/>
-		<link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
-		<meta name="msapplication-TileColor" content="#8b3dff" />
-		<meta
-			name="msapplication-config"
-			content="./assets/images/favicon/tile.xml"
-		/> -->
-
-		<link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+		<link rel="shortcut icon" href="./assets/images/favicon/logo-white.svg" />
 
 		<!-- Color modes -->
 		<script src="./assets/js/vendors/color-modes.js"></script>
@@ -74,250 +44,254 @@
 		<!-- Navbar -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light w-100">
-				<div class="container px-3">
-					<a class="navbar-brand" href="./index.html"
-						><img src="./assets/images/logo/logo.svg" alt
-					/></a>
-					<button class="navbar-toggler offcanvas-nav-btn" type="button">
-						<i class="bi bi-list"></i>
-					</button>
-					<div
-						class="offcanvas offcanvas-start offcanvas-nav"
-						style="width: 20rem"
-					>
-						<div class="offcanvas-header">
-							<a href="./index.html" class="text-inverse"
-								><img src="./assets/images/logo/logo.svg" alt
-							/></a>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="offcanvas"
-								aria-label="Close"
-							></button>
+				<!-- <div class="container px-3"> -->
+				<a class="navbar-brand ms-4" href="./index.html"
+					><img
+						src="./assets/images/logo/logo.svg"
+						width="80%"
+						title="민변 홈"
+						alt="민변 홈"
+				/></a>
+				<button class="navbar-toggler offcanvas-nav-btn" type="button">
+					<i class="bi bi-list"></i>
+				</button>
+				<div
+					class="offcanvas offcanvas-start offcanvas-nav"
+					style="width: 20rem"
+				>
+					<div class="offcanvas-header">
+						<a href="./index.html" class="text-inverse"
+							><img
+								src="./assets/images/logo/logo.svg"
+								width="180px"
+								title="민변 홈"
+								alt="민변 홈"
+						/></a>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body pt-0 align-items-center">
+						<ul class="navbar-nav mx-auto align-items-lg-center">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>소개</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#">역사</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">구성</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">회칙</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">오시는길</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>활동</a
+								>
+
+								<div
+									class="dropdown-menu dropdown-menu-md"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-file-text fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">공지사항</h5>
+												<p class="mb-0 fs-6">행사일정과 주요공지</p>
+											</div>
+										</div>
+									</a>
+
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-clipboard fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">
+													성명·보도자료
+													<span class="text-primary ms-1" id="changelog"></span>
+												</h5>
+												<p class="mb-0 fs-6">최근 발표한 입장들</p>
+											</div>
+										</div>
+									</a>
+
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-clipboard fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">
+													민변뉴스
+													<span class="text-primary ms-1" id="changelog"></span>
+												</h5>
+												<p class="mb-0 fs-6">민변 사람들의 이야기</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>자료실</a
+								>
+								<div
+									class="dropdown-menu dropdown-menu-md"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-file-text fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">자료집</h5>
+												<p class="mb-0 fs-6">토론회 등 발표자료들</p>
+											</div>
+										</div>
+									</a>
+
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-clipboard fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">간행물</h5>
+												<p class="mb-0 fs-6">민변이 낸 책</p>
+											</div>
+										</div>
+									</a>
+
+									<a class="dropdown-item mb-3 text-body" href="#">
+										<div class="d-flex align-items-center">
+											<i class="bi bi-clipboard fs-4 text-primary"></i>
+											<div class="ms-3 lh-1">
+												<h5 class="mb-1">
+													BI
+													<span class="text-primary ms-1" id="changelog"></span>
+												</h5>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>공익인권변론센터</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#">소개</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">페이스북</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">월간변론 시선</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">공익변론신청</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>사법센터</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#">소개</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">인사말</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">성명·보도자료</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!--search-->
+						<div class="col-md-2">
+							<form class="position-relative me-3">
+								<label for="searchInput" class="form-label visually-hidden"
+									>Search</label
+								>
+								<input
+									type="search"
+									class="form-control ps-6"
+									id="searchInput"
+								/>
+
+								<button type="submit" class="btn position-absolute top-0">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-search"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+										/>
+									</svg>
+								</button>
+							</form>
 						</div>
-						<div class="offcanvas-body pt-0 align-items-center">
-							<ul class="navbar-nav mx-auto align-items-lg-center">
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-										>소개</a
-									>
-									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" href="#">역사</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">구성</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">회칙</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">오시는길</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-										>활동</a
-									>
+						<div class="mt-3 mt-lg-0 d-flex align-items-center">
+							<a href="./signup.html" class="btn btn-primary">입회신청</a>
 
-									<div
-										class="dropdown-menu dropdown-menu-md"
-										aria-labelledby="navbarDropdown"
-									>
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-file-text fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">공지사항</h5>
-													<p class="mb-0 fs-6">행사일정과 주요공지</p>
-												</div>
-											</div>
-										</a>
-
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-clipboard fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">
-														성명·보도자료
-														<span
-															class="text-primary ms-1"
-															id="changelog"
-														></span>
-													</h5>
-													<p class="mb-0 fs-6">최근 발표한 입장들</p>
-												</div>
-											</div>
-										</a>
-
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-clipboard fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">
-														민변뉴스
-														<span
-															class="text-primary ms-1"
-															id="changelog"
-														></span>
-													</h5>
-													<p class="mb-0 fs-6">민변 사람들의 이야기</p>
-												</div>
-											</div>
-										</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-										>자료실</a
-									>
-									<div
-										class="dropdown-menu dropdown-menu-md"
-										aria-labelledby="navbarDropdown"
-									>
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-file-text fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">자료집</h5>
-													<p class="mb-0 fs-6">토론회 등 발표자료들</p>
-												</div>
-											</div>
-										</a>
-
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-clipboard fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">간행물</h5>
-													<p class="mb-0 fs-6">민변이 낸 책</p>
-												</div>
-											</div>
-										</a>
-
-										<a class="dropdown-item mb-3 text-body" href="#">
-											<div class="d-flex align-items-center">
-												<i class="bi bi-clipboard fs-4 text-primary"></i>
-												<div class="ms-3 lh-1">
-													<h5 class="mb-1">
-														BI
-														<span
-															class="text-primary ms-1"
-															id="changelog"
-														></span>
-													</h5>
-												</div>
-											</div>
-										</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-										>공익인권변론센터</a
-									>
-									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" href="#">소개</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">페이스북</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">월간변론 시선</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">공익변론신청</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-										>사법센터</a
-									>
-									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" href="#">소개</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">인사말</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">성명·보도자료</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<!--search-->
-							<div class="col-md-2">
-								<form class="position-relative me-3">
-									<label for="searchInput" class="form-label visually-hidden"
-										>Search</label
-									>
-									<input
-										type="search"
-										class="form-control ps-6"
-										id="searchInput"
-									/>
-
-									<button type="submit" class="btn position-absolute top-0">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-search"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-											/>
-										</svg>
-									</button>
-								</form>
-							</div>
-							<div class="mt-3 mt-lg-0 d-flex align-items-center">
-								<a href="./signup.html" class="btn btn-primary">회원전용</a>
-
-								<p class="mb-0 mx-3">
-									<a href="#" class="strong small text-body-secondary">EN</a>
-								</p>
-							</div>
+							<p class="mb-0 mx-3 d-none d-sm-none d-xxl-block">
+								<a href="#" class="strong small text-body-secondary"
+									>회원가입</a
+								>
+							</p>
+							<p class="me-5 mb-0 d-none d-sm-none d-xxl-block">
+								<a href="#" class="strong small text-body-secondary">EN</a>
+							</p>
 						</div>
 					</div>
 				</div>
+				<!-- </div> -->
 			</nav>
 		</header>
 
 		<main>
 			<!-- Carousel start -->
-			<section class="pt-lg-7 py-5 bg-light-subtle">
+			<section class="pt-lg-7 py-5 bg-primary-gradient">
 				<!-- <section class="mb-xl-9 my-5"> -->
 				<div class="container">
 					<div class="row">
@@ -332,23 +306,25 @@
 												>
 													<div class="mb-3">
 														<small
-															class="text-primary text-uppercase ls-md fw-semibold"
-															>카테고리명</small
+															class="text-light text-uppercase ls-md fw-semibold"
+															>민변뉴스</small
 														>
-														<h1 class="mb-0 mt-3">
-															<a href="#" class="text-reset"
-																>대한민국 마지막 사형집행 26년, 이제
-																대한민국에서 사형제도는 완전히 폐지되어야 한다
+														<h1 class="mb-0 mt-3 text-white">
+															<a
+																href="#"
+																class="text-reset link-secondary link-offset-2 link-underline-opacity-50-hover"
+																>기억, 추모, 그리고 진실을 향한 다짐이 함께한
+																10·29 이태원 참사 1주기 추모기간
 															</a>
 														</h1>
 													</div>
 													<div class="mb-5">
-														<small class="me-2">2024-12-12</small>
+														<small class="me-2 text-light">2024-12-12</small>
 													</div>
 													<div class="mt-auto mb-3">
 														<a
 															href="./event-single.html"
-															class="icon-link icon-link-hover card-link"
+															class="text-light icon-link icon-link-hover card-link"
 														>
 															더보기
 															<svg
@@ -371,7 +347,7 @@
 											<div
 												class="col-md-6 rounded"
 												style="
-													background-image: url(https://picsum.photos/640/400);
+													background-image: url(http://minbyun.or.kr/wp-content/uploads/2023/11/1%EC%A3%BC%EA%B8%B0-3.jpg);
 													background-size: cover;
 													background-repeat: no-repeat;
 													background-position: center;
@@ -388,23 +364,25 @@
 												>
 													<div class="mb-3">
 														<small
-															class="text-primary text-uppercase ls-md fw-semibold"
-															>카테고리명</small
+															class="text-light text-uppercase ls-md fw-semibold"
+															>카테고리1</small
 														>
-														<h1 class="mb-0 mt-3">
-															<a href="#" class="text-reset"
+														<h1 class="mb-0 mt-3 text-white">
+															<a
+																href="#"
+																class="text-reset link-secondary link-offset-2 link-underline-opacity-50-hover"
 																>대한민국 마지막 사형집행 26년, 이제
 																대한민국에서 사형제도는 완전히 폐지되어야 한다
 															</a>
 														</h1>
 													</div>
 													<div class="mb-5">
-														<small class="me-2">2024-12-12</small>
+														<small class="me-2 text-light">2024-12-12</small>
 													</div>
 													<div class="mt-auto mb-3">
 														<a
 															href="./event-single.html"
-															class="icon-link icon-link-hover card-link"
+															class="text-light icon-link icon-link-hover card-link"
 														>
 															더보기
 															<svg
@@ -427,7 +405,7 @@
 											<div
 												class="col-md-6 rounded"
 												style="
-													background-image: url(https://picsum.photos/640/400);
+													background-image: url(http://minbyun.or.kr/wp-content/uploads/2023/10/385086895_652695030285034_1654753865096786023_n.jpg);
 													background-size: cover;
 													background-repeat: no-repeat;
 													background-position: center;
@@ -444,23 +422,26 @@
 												>
 													<div class="mb-3">
 														<small
-															class="text-primary text-uppercase ls-md fw-semibold"
-															>카테고리명</small
+															class="text-light text-uppercase ls-md fw-semibold"
+															>카테고리2</small
 														>
-														<h1 class="mb-0 mt-3">
-															<a href="#" class="text-reset"
-																>대한민국 마지막 사형집행 26년, 이제
-																대한민국에서 사형제도는 완전히 폐지되어야 한다
+														<h1 class="mb-0 mt-3 text-white">
+															<a
+																href="#"
+																class="text-reset link-secondary link-offset-2 link-underline-opacity-50-hover"
+																>[긴급토론회] 대통령 거부권, 국민이 거부한다
+																대통령 거부권, 국민이 거부한다 / 2024. 1.
+																16.(화) 14:00
 															</a>
 														</h1>
 													</div>
 													<div class="mb-5">
-														<small class="me-2">2024-12-12</small>
+														<small class="me-2 text-light">2024-12-12</small>
 													</div>
 													<div class="mt-auto mb-3">
 														<a
 															href="./event-single.html"
-															class="icon-link icon-link-hover card-link"
+															class="text-light icon-link icon-link-hover card-link"
 														>
 															더보기
 															<svg
@@ -483,7 +464,7 @@
 											<div
 												class="col-md-6 rounded"
 												style="
-													background-image: url(https://picsum.photos/640/400);
+													background-image: url(http://minbyun.or.kr/wp-content/uploads/2024/01/vetos.png);
 													background-size: cover;
 													background-repeat: no-repeat;
 													background-position: center;
@@ -494,7 +475,10 @@
 									</div>
 								</div>
 
-								<div class="swiper-pagination"></div>
+								<div
+									class="swiper-pagination"
+									style="filter: invert(50%)"
+								></div>
 							</div>
 						</div>
 					</div>
@@ -502,25 +486,17 @@
 			</section>
 			<!-- Carousel end -->
 
-			<!--Our articles start-->
+			<!--메인노출 start-->
 			<section class="my-xl-9 my-5">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 offset-lg-3">
-							<div class="text-center mb-xl-7 mb-5">
-								<h2 class="h1 mb-3">지금 민변의 활동</h2>
-								<p class="mb-0">세상에 내놓은 민변의 소식을 전합니다</p>
-							</div>
-						</div>
-					</div>
 					<!-- Blog Card -->
 					<div class="table-responsive-lg">
 						<div class="row g-5 flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
 							<article class="col-lg-4 col-md-6 col-12">
-								<figure class="mb-4 zoom-img">
+								<figure class="mb-4 zoom-img" id="sizetest">
 									<a href="../blog-single.html">
 										<img
-											src="https://picsum.photos/560/315"
+											src="http://minbyun.or.kr/wp-content/uploads/2023/11/%EB%B3%B4%EA%B3%A0%ED%9A%8C.jpg"
 											alt="blog"
 											class="img-fluid rounded-3"
 										/>
@@ -534,7 +510,7 @@
 								>
 								<h3 class="my-3 lh-base h4">
 									<a href="../blog-single.html" class="text-reset"
-										>[자료집] 2023 한국인권보고서 및 한국인권보고대회</a
+										>첫번째 이미지 제목이 들어가는 곳입니다</a
 									>
 								</h3>
 								<div
@@ -544,10 +520,10 @@
 								</div>
 							</article>
 							<article class="col-lg-4 col-md-6 col-12">
-								<figure class="mb-4 zoom-img">
+								<figure class="mb-4 zoom-img" id="sizetest">
 									<a href="../blog-single.html">
 										<img
-											src="https://picsum.photos/560/315"
+											src="http://minbyun.or.kr/wp-content/uploads/2023/11/1%EC%A3%BC%EA%B8%B0.jpg"
 											alt="blog"
 											class="img-fluid rounded-3"
 										/>
@@ -557,24 +533,24 @@
 								<a
 									href="#!"
 									class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
-									>카테고리1</a
+									>카테고리2</a
 								>
 								<h3 class="my-3 lh-base h4">
 									<a href="../blog-single.html" class="text-reset"
-										>[자료집] 2023 한국인권보고서 및 한국인권보고대회</a
+										>두번째 제목이 들어가는 곳입니다</a
 									>
 								</h3>
 								<div
 									class="d-flex align-items-center justify-content-between mb-3 mb-md-0"
 								>
-									<span class="fs-6">12-12</span>
+									<span class="fs-6">12-02</span>
 								</div>
 							</article>
 							<article class="col-lg-4 col-md-6 col-12">
-								<figure class="mb-4 zoom-img">
+								<figure class="mb-4 zoom-img" id="sizetest">
 									<a href="../blog-single.html">
 										<img
-											src="https://picsum.photos/560/315"
+											src="http://minbyun.or.kr/wp-content/uploads/2024/01/%EA%B3%B5%EC%88%98%EC%B2%98%ED%86%A0%EB%A1%A0%ED%9A%8C1.jpg"
 											alt="blog"
 											class="img-fluid rounded-3"
 										/>
@@ -599,9 +575,9 @@
 							</article>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row d-none d-md-block d-lg-none">
 						<div class="col-lg-12">
-							<div class="mt-lg-8 mt-5">
+							<div class="mt-lg-5 mt-5">
 								<a
 									href="./blog.html"
 									class="icon-link icon-link-hover text-dark"
@@ -626,9 +602,9 @@
 					</div>
 				</div>
 			</section>
-			<!--Our articles end-->
+			<!--메인노출 end-->
 
-			<!--Features start-->
+			<!--최신글 start-->
 			<section class="my-xl-7" data-cue="fadeIn">
 				<div class="container">
 					<div class="row g-lg-7 gy-5">
@@ -731,12 +707,12 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12 text-center text-md-start">
-									<div class="mt-lg-4 mt-3 mb-5">
+									<div class="mt-lg-4 my-3">
 										<a
 											href="./blog.html"
 											class="icon-link icon-link-hover text-dark"
 										>
-											더보기
+											더보기1
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="16"
@@ -819,12 +795,12 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12 text-center text-md-start">
-									<div class="mt-lg-4 mt-3 mb-5">
+									<div class="mt-lg-4 my-3">
 										<a
 											href="./blog.html"
 											class="icon-link icon-link-hover text-dark"
 										>
-											더보기
+											더보기2
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="16"
@@ -846,10 +822,10 @@
 					</div>
 				</div>
 			</section>
-			<!--Features end-->
+			<!--최신글 end-->
 
-			<!--Visualize & plan start-->
-			<section class="my-xl-7 py-5">
+			<!--Visualize start-->
+			<section class="mb-xl-7 py-5">
 				<div class="container mb-5">
 					<div class="row align-items-center">
 						<div class="col-lg-5 col-md-6 col-12" data-cue="slideInLeft">
@@ -895,7 +871,7 @@
 							>
 								<figure>
 									<img
-										src="https://picsum.photos/600/400"
+										src="http://minbyun.or.kr/wp-content/uploads/2023/07/photo_2023-07-07_17-41-43.jpg"
 										alt="landing"
 										class="img-fluid rounded-4"
 									/>
@@ -905,47 +881,54 @@
 					</div>
 				</div>
 			</section>
-			<!--Visualize & plan end-->
+			<!--Visualize end-->
 
-			<!--Testimonial start-->
-			<section class="py-5 py-lg-7 bg-body-tertiary" data-cue="fadeIn">
+			<!--Youtube start-->
+			<section class="py-xl-7 py-5 bg-body-tertiary" data-cue="fadeIn">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="text-center mb-7">
-								<small class="text-primary text-uppercase ls-md fw-semibold"
-									>MEDIA</small
+							<div class="text-center mb-5">
+								<small class="text-uppercase ls-md fw-semibold"
+									>영상으로 말하는 민변</small
 								>
-								<h2 class="mt-3 mb-0">영상으로 말하는 민변</h2>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-10 offset-lg-1">
 							<div class="swiper sliderSwiper" data-cue="zoomIn">
-								<div class="swiper-wrapper pb-6">
+								<div class="swiper-wrapper pb-7">
 									<div class="swiper-slide">
 										<div class="card">
 											<div class="row align-items-center">
 												<div class="col-xl-6 col-lg-6 col-md-12">
-													<img
-														src="https://picsum.photos/560/315"
-														class="img-fluid rounded-start-md-3 rounded-top-md-0 rounded-top-3"
-														alt="유튜브 영상"
-													/>
+													<iframe
+														width="560"
+														height="315"
+														src="https://www.youtube.com/embed/PK63gpH-RVM?si=jfHw71Kdas_BRCKM"
+														title="YouTube video player"
+														frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen
+														class="rounded-start-md-3 rounded-top-md-0 rounded-top-3"
+													>
+													</iframe>
 												</div>
 												<div class="col-xl-6 col-lg-6 col-md-12">
 													<div class="card-body p-4 px-xl-0">
 														<div class="mb-6 pe-5">
-															<p class="card-text lead mb-5">
-																"수동 편집으로 내용이 들어가는 부분 수동
-																편집으로 내용이 들어가는 부분 수동 편집으로
-																내용이 들어가는 부분 수동 편집으로 내용이
-																들어가는 부분"
+															<p class="card-text mb-4">
+																신입 변호사들의 사적인 사리에서만 공유되었던
+																합격과 취업 그리고 저년차 변호사 생활에 대한
+																이야기
 															</p>
 														</div>
-														<h5 class="mb-3">제목이 들어가는 부분</h5>
-														<a href="#" class="icon-link icon-link-hover">
+														<h4 class="mb-3">아는 건 쥐뿔도 없지만 1편</h4>
+														<a
+															href="https://youtu.be/PK63gpH-RVM?si=0Q_guJ2HOQEx7MVa"
+															class="icon-link icon-link-hover"
+														>
 															더보기
 															<svg
 																xmlns="http://www.w3.org/2000/svg"
@@ -970,65 +953,34 @@
 										<div class="card">
 											<div class="row align-items-center">
 												<div class="col-xl-6 col-lg-6 col-md-12">
-													<img
-														src="https://picsum.photos/560/315"
-														class="img-fluid rounded-start-md-3 rounded-top-md-0 rounded-top-3"
-														alt="유튜브 영상"
-													/>
+													<iframe
+														width="560"
+														height="315"
+														src="https://www.youtube.com/embed/HzUuVtBFyqI?si=UfZJnapJfib6I4t4"
+														title="YouTube video player"
+														frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen
+														class="rounded-start-md-3 rounded-top-md-0 rounded-top-3"
+													></iframe>
 												</div>
 												<div class="col-xl-6 col-lg-6 col-md-12">
 													<div class="card-body p-4 px-xl-0">
 														<div class="mb-6 pe-5">
-															<p class="card-text lead mb-5">
-																수동 편집으로 내용이 들어가는 부분 수동 편집으로
-																내용이 들어가는 부분 수동 편집으로 내용이
-																들어가는 부분 수동 편집으로 내용이 들어가는 부분
+															<p class="card-text mb-4">
+																일본군 성노예제 문제 해결을 위한 정의기억언대와
+																우리 모임 일본군 '위안부' 문제대응 TF가 함께
+																공동주최한 기자회견 영상입니다
 															</p>
 														</div>
-														<h5 class="mb-3">영상 제목이 들어가는 부분</h5>
-														<a href="#" class="icon-link icon-link-hover">
-															더보기
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="14"
-																height="14"
-																fill="currentColor"
-																class="bi bi-arrow-right"
-																viewBox="0 0 16 16"
-															>
-																<path
-																	fill-rule="evenodd"
-																	d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-																/>
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card">
-											<div class="row align-items-center">
-												<div class="col-xl-6 col-lg-6 col-md-12">
-													<img
-														src="https://picsum.photos/560/315"
-														class="img-fluid rounded-start-md-3 rounded-top-md-0 rounded-top-3"
-														alt="유튜브 영상"
-													/>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-12">
-													<div class="card-body p-4 px-xl-0">
-														<div class="mb-6 pe-5">
-															<p class="card-text lead mb-5">
-																"수동 편집으로 내용이 들어가는 부분 수동
-																편집으로 내용이 들어가는 부분 수동 편집으로
-																내용이 들어가는 부분 수동 편집으로 내용이
-																들어가는 부분"
-															</p>
-														</div>
-														<h5 class="mb-3">제목이 들어가는 부분</h5>
-														<a href="#" class="icon-link icon-link-hover">
+														<h4 class="mb-3">
+															일본군 성노예제 피해자들의 일본국 상대 손해배상
+															청구소송 항소심 입장 발표
+														</h4>
+														<a
+															href="https://youtu.be/HzUuVtBFyqI?si=UfZJnapJfib6I4t4"
+															class="icon-link icon-link-hover"
+														>
 															더보기
 															<svg
 																xmlns="http://www.w3.org/2000/svg"
@@ -1056,11 +1008,179 @@
 					</div>
 				</div>
 			</section>
-			<!--Testimonial end-->
+			<!--Youtube end-->
+
+			<!--Outlinks start-->
+			<section class="pb-xl-9 py-5 bg-body-tertiary" id="speaker">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="text-center mb-5">
+								<small class="text-uppercase ls-md fw-semibold"
+									>관련 링크</small
+								>
+							</div>
+						</div>
+					</div>
+					<div class="table-responsive-xl">
+						<div
+							class="row row-cols-xl-5 row-cols-md-4 row-cols-2 g-4 flex-nowrap pb-4 pb-xl-0 me-5 me-lg-0"
+						>
+							<div class="col">
+								<a
+									href="https://nodumpingnukewater.campaignus.me/"
+									target="_blank"
+								>
+									<div class="card text-center shadow-sm border-0 card-lift">
+										<div class="card-body">
+											<div class="mb-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													fill="currentColor"
+													class="bi bi-radioactive text-primary"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"
+													/>
+													<path
+														d="M9.653 5.496A3 3 0 0 0 8 5c-.61 0-1.179.183-1.653.496L4.694 2.992A5.97 5.97 0 0 1 8 2c1.222 0 2.358.365 3.306.992zm1.342 2.324a3 3 0 0 1-.884 2.312 3 3 0 0 1-.769.552l1.342 2.683c.57-.286 1.09-.66 1.538-1.103a6 6 0 0 0 1.767-4.624zm-5.679 5.548 1.342-2.684A3 3 0 0 1 5.005 7.82l-2.994-.18a6 6 0 0 0 3.306 5.728ZM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
+													/>
+												</svg>
+											</div>
+											<div class="mb-2">
+												<h4 class="mb-0 h5">후쿠시마 오염수 해양투기</h4>
+												<span class="small">저지를 위한 헌법소원 대리인단</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="https://www.youtube.com/@minbyun1988" target="_blank">
+									<div class="card text-center shadow-sm border-0 card-lift">
+										<div class="card-body">
+											<div class="mb-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													fill="currentColor"
+													class="bi bi-youtube text-primary"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+													/>
+												</svg>
+											</div>
+											<div class="mb-2">
+												<h4 class="mb-0 h5">민변 Youtube</h4>
+												<span class="small">공식 Youtube 채널</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="https://www.youtube.com/@MINTUBE_1988" target="_blank">
+									<div class="card text-center shadow-sm border-0 card-lift">
+										<div class="card-body">
+											<div class="mb-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													fill="currentColor"
+													class="bi bi-youtube text-primary"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+													/>
+												</svg>
+											</div>
+											<div class="mb-2">
+												<h4 class="mb-0 h5">민튜브 Mintube</h4>
+												<span class="small">변호사들의 진지한 유튜브</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col">
+								<a
+									href="#"
+									class="text-reset"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									<div class="card text-center shadow-sm border-0 card-lift">
+										<div class="card-body">
+											<div class="mb-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													fill="currentColor"
+													class="bi bi-check-square-fill text-primary"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"
+													/>
+												</svg>
+											</div>
+											<div class="mb-2">
+												<h4 class="mb-0 h5">추가링크1</h4>
+												<span class="small">설명글</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col">
+								<a
+									href="#"
+									class="text-reset"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									<div class="card text-center shadow-sm border-0 card-lift">
+										<div class="card-body">
+											<div class="mb-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													fill="currentColor"
+													class="bi bi-check-square-fill text-primary"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"
+													/>
+												</svg>
+											</div>
+											<div class="mb-2">
+												<h4 class="mb-0 h5">추가링크2</h4>
+												<span class="small">설명글</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Outlinks end-->
 
 			<!--Call to action start-->
 			<section class="py-5 bg-pattern bg-primary-gradient mb-xl-9">
-				<div class="container" data-cues="zoomIn">
+				<div class="container">
 					<div class="row rounded-3 p-7 g-0">
 						<div
 							class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-12"
@@ -1080,15 +1200,10 @@
 									</p>
 								</div>
 
-								<form
-									class="row g-2 needs-validation d-flex mx-lg-7"
-									novalidate
-								>
+								<form class="row g-2 d-flex mx-lg-7">
 									<div class="col-md-6 col-xl-6 col-12">
 										<div class="d-grid">
-											<button class="btn btn-dark" type="button">
-												민변 입회 절차 안내
-											</button>
+											<a href="#" class="btn btn-dark">민변 입회 신청</a>
 										</div>
 									</div>
 									<div class="col-md-6 col-xl-6 col-12">
@@ -1117,9 +1232,9 @@
 							<div class="mb-4">
 								<a href="#">
 									<img
-										src="./assets/images/logo/logo_original.svg"
+										src="./assets/images/logo/logo_eng.svg"
 										alt="logo"
-										class="text-inverse"
+										class="text-inverse opacity-75 w-75"
 									/>
 								</a>
 							</div>
