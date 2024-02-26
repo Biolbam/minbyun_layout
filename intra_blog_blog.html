@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
+
+		<!-- Favicon icon-->
+		<link rel="shortcut icon" href="./assets/images/favicon/logo-white.svg" />
+
+		<!-- Color modes -->
+		<script src="./assets/js/vendors/color-modes.js"></script>
+
+		<!-- Libs CSS -->
+		<link
+			href="./assets/libs/simplebar/dist/simplebar.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="./assets/libs/bootstrap-icons/font/bootstrap-icons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Scroll Cue -->
+		<link rel="stylesheet" href="./assets/libs/scrollcue/scrollCue.css" />
+
+		<!-- Box icons -->
+		<link rel="stylesheet" href="./assets/fonts/css/boxicons.min.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./assets/css/theme.min.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./assets/css/mb_custom.css" />
+
+		<title>민변 Home</title>
+	</head>
+	<body>
+		<!-- Navbar end -->
+		<header>
+			<nav
+				class="navbar navbar-expand-lg w-100 bg-primary"
+				data-bs-theme="dark"
+			>
+				<div class="container-fluid" style="flex-wrap: nowrap">
+					<a class="navbar-brand" href="./index.html"
+						><img
+							src="./assets/images/logo/logo_short.svg"
+							width="23%"
+							title="민변 인트라넷"
+							alt="민변 인트라넷"
+						/><span class="ms-2 fw-semibold">회원전용사이트</span></a
+					>
+					<button class="navbar-toggler offcanvas-nav-btn" type="button">
+						<i class="bi bi-list"></i>
+					</button>
+
+					<div
+						class="offcanvas offcanvas-start offcanvas-nav"
+						style="width: 20rem"
+					>
+						<div class="offcanvas-header">
+							<a href="./index.html" class="text-inverse"
+								><img
+									src="./assets/images/logo/logo_short.svg"
+									width="70px"
+									title="민변 인트라넷"
+									alt="민변 인트라넷"
+								/>
+								회원전용게시판</a
+							>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body pt-0 align-items-center">
+							<ul class="navbar-nav mx-auto align-items-lg-center">
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle link-light"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										>메뉴가들어가는 부분입니다
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item link-light" href="#">역사</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">구성</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">회칙</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">오시는길</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<!--search-->
+
+							<div class="col-md-2">
+								<form class="position-relative me-3 mt-lg-0 mt-3">
+									<label for="searchInput" class="form-label visually-hidden"
+										>Search</label
+									>
+									<input
+										type="search"
+										class="form-control ps-6 bg-dark"
+										id="searchInput"
+									/>
+
+									<button type="submit" class="btn position-absolute top-0">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-search"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+											/>
+										</svg>
+									</button>
+								</form>
+							</div>
+							<div class="mt-3 mt-lg-0 d-flex align-items-center">
+								<a href="#" class="btn btn-dark me-2">로그인</a>
+
+								<a href="#" class="btn btn-outline-secondary btn-sm me-2"
+									>회원가입</a
+								>
+								<a href="#" class="btn btn-outline-secondary btn-sm me-4"
+									>민변홈</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Navbar end-->
+
+		<main>
+			<div class="pattern-square"></div>
+			<!--Pageheader start-->
+			<section class="py-5 py-lg-7">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="text-center">
+								<h1 class="mb-3">1차 메뉴명(예 : 활동)</h1>
+								<p class="mb-0">1차 메뉴의 설명글이 들어가는 곳</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Pageheader end-->
+
+			<!--Blog list start-->
+			<section class="mb-xl-9 my-4">
+				<div class="container">
+					<div class="row mb-5">
+						<div class="col-lg-5 col-md-7 col-12">
+							<div class="row g-2 g-sm-3 align-items-center">
+								<div class="col-lg-6 col-md-6 col-12">
+									<form>
+										<label for="searchInput" class="form-label visually-hidden"
+											>Search</label
+										>
+										<input
+											type="search"
+											class="form-control"
+											id="searchInput"
+											placeholder="검색하기"
+										/>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<label for="categoryList" class="form-label visually-hidden"
+										>카테고리 검색</label
+									>
+									<select class="form-select" id="categoryList">
+										<option selected disabled value="">카테고리 선택</option>
+										<option value="">2차메뉴</option>
+										<option value="">2차메뉴</option>
+										<option value="">2차메뉴</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2023/11/1%EC%A3%BC%EA%B8%B0.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2023/11/%EB%B3%B4%EA%B3%A0%ED%9A%8C.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2024/01/%EA%B3%B5%EC%88%98%EC%B2%98%ED%86%A0%EB%A1%A0%ED%9A%8C1.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2023/11/1%EC%A3%BC%EA%B8%B0.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2023/11/%EB%B3%B4%EA%B3%A0%ED%9A%8C.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="row d-flex align-items-center mb-7 mb-md-5">
+								<div class="col-lg-4 col-xl-4 col-md-12 col-12">
+									<figure class="mb-4 mb-lg-0 zoom-img">
+										<a href="./blog-single.html">
+											<img
+												src="http://minbyun.or.kr/wp-content/uploads/2024/01/%EA%B3%B5%EC%88%98%EC%B2%98%ED%86%A0%EB%A1%A0%ED%9A%8C1.jpg"
+												alt="blog"
+												class="img-fluid rounded-3"
+												style="object-fit: cover; width: 100%; height: 180px"
+											/>
+										</a>
+									</figure>
+								</div>
+								<div class="col-lg-8 col-xl-8 col-md-12 col-12">
+									<div class="ms-lg-4">
+										<a
+											href="#!"
+											class="mb-3 badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase"
+											>2차메뉴명</a
+										>
+										<div class="mb-3">
+											<h3 class="lh-base h4 text-truncate">
+												<a href="./blog-single.html" class="text-reset"
+													>제목이 들어가는 곳입니다 한줄 이상이 될 때 한줄로
+													줄이는 것 class = text-truncate</a
+												>
+											</h3>
+											<p>
+												요약글이 들어가는 부분 요약글이 들어가는 부분 요약글이
+												들어가는 부분 요약글이 들어가는 부분 요약글이 들어가는
+												부분 요약글이 들어가는 부분 요약글이 들어가는 부분
+											</p>
+										</div>
+										<div class="d-md-flex align-items-center">
+											<span class="fs-6 me-3">2024-12-12</span>
+											<span class="text-reset" alt="조회수">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="14"
+													fill="currentColor"
+													class="bi bi-eye"
+													viewBox="0 0 16 16"
+												>
+													<path
+														d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+													/>
+													<path
+														d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+													/>
+												</svg>
+												<span class="ms-2 fs-6">24</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<div class="row">
+							<!--pagination start-->
+							<div class="col-lg-12">
+								<div class="mt-xl-7 mt-3">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+											<li class="page-item">
+												<a
+													class="page-link link-body-emphasis"
+													href="#"
+													aria-label="Previous"
+												>
+													<span aria-hidden="true">&laquo;</span>
+												</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link link-body-emphasis" href="#"
+													><small>1</small></a
+												>
+											</li>
+											<li class="page-item">
+												<a class="page-link link-body-emphasis" href="#"
+													><small>2</small></a
+												>
+											</li>
+											<li class="page-item">
+												<a class="page-link link-body-emphasis" href="#"
+													><small>3</small></a
+												>
+											</li>
+											<li class="page-item">
+												<a
+													class="page-link link-body-emphasis"
+													href="#"
+													aria-label="Next"
+												>
+													<span aria-hidden="true">&raquo;</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<!--pagination end-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Blog list end-->
+			<!--line start-->
+			<div class="mt-9 border-bottom"></div>
+			<!--line end-->
+		</main>
+
+		<!-- Footer -->
+		<footer class="pt-7">
+			<div class="container">
+				<!-- Footer 4 column -->
+				<div class="row">
+					<div class="col-xxl-5 col-lg-5 col-md-7">
+						<div class="mb-7 mb-xl-0">
+							<div class="mb-4">
+								<a href="#">
+									<img
+										src="./assets/images/logo/logo_eng.svg"
+										alt="logo"
+										class="text-inverse opacity-75 w-75"
+									/>
+								</a>
+							</div>
+							<p class="mb-5 fs-6">
+								[06649] 서울특별시 서초구 서초대로46길 74, 2층(스탠다드빌딩)
+								<br />전화 02-522-7284 | 팩스 02-522-7285 | 대표메일
+								admin@minbyun.or.kr | 공익인권변론센터 pipc@minbyun.or.kr |
+								사법센터 mjc@minbyun.or.kr | 대표 조영선 | 고유번호 214-82-60205
+							</p>
+						</div>
+					</div>
+					<div class="offset-xxl-1 col-xxl-6 col-lg-6 offset-md-1 col-md-4">
+						<div class="row" id="ft-links">
+							<div class="col-lg-4 col-12">
+								<div class="position-relative">
+									<div
+										class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0"
+									>
+										<h5>민변</h5>
+										<a
+											class="d-block d-lg-none stretched-link text-inherit"
+											data-bs-toggle="collapse"
+											href="#collapseLanding"
+											role="button"
+											aria-expanded="false"
+											aria-controls="collapseLanding"
+										>
+											<i class="bi bi-chevron-down"></i>
+										</a>
+									</div>
+									<div
+										class="collapse d-lg-block"
+										id="collapseLanding"
+										data-bs-parent="#ft-links"
+									>
+										<ul class="list-unstyled mb-0 py-3 py-lg-0">
+											<li class="mb-2">
+												<a
+													href="./index.html"
+													class="text-decoration-none text-reset"
+													>회칙</a
+												>
+											</li>
+											<li class="mb-2">
+												<a href="#!" class="text-decoration-none text-reset"
+													>규정</a
+												>
+											</li>
+											<li class="mb-2">
+												<a
+													href="./landing-finance.html"
+													class="text-decoration-none text-reset"
+													>총회 대의원회</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-12">
+								<div
+									class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative"
+								>
+									<h5>회원서비스</h5>
+									<a
+										class="d-block d-lg-none stretched-link text-inherit"
+										data-bs-toggle="collapse"
+										href="#collapseAccounts"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapseAccounts"
+									>
+										<i class="bi bi-chevron-down"></i>
+									</a>
+								</div>
+								<div
+									class="collapse d-lg-block"
+									id="collapseAccounts"
+									data-bs-parent="#ft-links"
+								>
+									<ul class="list-unstyled mb-0 py-3 py-lg-0">
+										<li class="mb-2">
+											<a
+												href="./signin.html"
+												class="text-decoration-none text-reset"
+												>회원검색</a
+											>
+										</li>
+										<li class="mb-2">
+											<a
+												href="./forget-password.html"
+												class="text-decoration-none text-reset"
+												>온라인연수원</a
+											>
+										</li>
+										<li class="mb-2">
+											<a
+												href="./reset-password.html"
+												class="text-decoration-none text-reset"
+												>디지털도서관</a
+											>
+										</li>
+										<li class="mb-2">
+											<a href="#!" class="text-decoration-none text-reset"
+												>뉴스레터</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4 col-12">
+								<div
+									class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative"
+								>
+									<h5>게시판</h5>
+									<a
+										class="d-block d-lg-none stretched-link text-inherit"
+										data-bs-toggle="collapse"
+										href="#collapseResources"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapseResources"
+									>
+										<i class="bi bi-chevron-down"></i>
+									</a>
+								</div>
+								<div
+									class="collapse d-lg-block"
+									id="collapseResources"
+									data-bs-parent="#ft-links"
+								>
+									<ul class="list-unstyled mb-0 py-3 py-lg-0">
+										<li class="mb-2">
+											<a
+												href="./docs/index.html"
+												class="text-decoration-none text-reset"
+												>하나</a
+											>
+										</li>
+										<li class="mb-2">
+											<a href="#!" class="text-decoration-none text-reset"
+												>둘</a
+											>
+										</li>
+										<li class="mb-2">
+											<a
+												href="./changelog.html"
+												class="text-decoration-none text-reset"
+												>셋</a
+											>
+										</li>
+										<li class="mb-2">
+											<a href="#!" class="text-decoration-none text-reset"
+												>넷</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container my-5">
+				<div class="row align-items-center">
+					<div class="col-md-9">
+						<div class="small">
+							민주사회를 위한 변호사 모임 © 1988-2024 Some Rights Reserved
+
+							<span
+								><a
+									href="https://creativecommons.org/licenses/by-nc/4.0/"
+									class="link-body-emphasis"
+									>CC BY-NC 4.0</a
+								></span
+							>
+						</div>
+						<div class="small mb-3 mb-md-0">
+							<span><a href="#" class="link-body-emphasis">이용약관</a></span>
+							|
+							<span
+								><a href="#" class="link-body-emphasis"
+									>개인정보처리방침</a
+								></span
+							>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div
+							class="text-md-end d-flex align-items-center justify-content-md-end"
+						>
+							<div class="dropdown">
+								<button
+									class="btn btn-light btn-icon rounded-circle d-flex align-items-center"
+									type="button"
+									aria-expanded="false"
+									data-bs-toggle="dropdown"
+									aria-label="Toggle theme (auto)"
+								>
+									<i class="bi theme-icon-active"></i>
+									<span class="visually-hidden bs-theme-text"
+										>Toggle theme</span
+									>
+								</button>
+								<ul
+									class="dropdown-menu dropdown-menu-end shadow"
+									aria-labelledby="bs-theme-text"
+								>
+									<li>
+										<button
+											type="button"
+											class="dropdown-item d-flex align-items-center"
+											data-bs-theme-value="light"
+											aria-pressed="false"
+										>
+											<i class="bi theme-icon bi-sun-fill"></i>
+											<span class="ms-2">Light</span>
+										</button>
+									</li>
+									<li>
+										<button
+											type="button"
+											class="dropdown-item d-flex align-items-center"
+											data-bs-theme-value="dark"
+											aria-pressed="false"
+										>
+											<i class="bi theme-icon bi-moon-stars-fill"></i>
+											<span class="ms-2">Dark</span>
+										</button>
+									</li>
+									<li>
+										<button
+											type="button"
+											class="dropdown-item d-flex align-items-center active"
+											data-bs-theme-value="auto"
+											aria-pressed="true"
+										>
+											<i class="bi theme-icon bi-circle-half"></i>
+											<span class="ms-2">Auto</span>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="ms-3 d-flex gap-2">
+								<a
+									href="www.youtube.com/@minbyun1988"
+									target="_blank"
+									class="text-reset btn btn-youtube btn-icon"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-youtube"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+										/>
+									</svg>
+								</a>
+								<a
+									href="https://facebook.com/minbyunkorea"
+									target="_blank"
+									class="text-reset btn btn-facebook btn-icon"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-facebook"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+										/>
+									</svg>
+								</a>
+								<a
+									href="https://twitter.com/minbyun"
+									target="_blank"
+									class="text-reset btn btn-twitter btn-icon"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-twitter-x"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Scroll top -->
+		<div class="btn-scroll-top">
+			<svg
+				class="progress-square svg-content"
+				width="100%"
+				height="100%"
+				viewBox="0 0 40 40"
+			>
+				<path
+					d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"
+				/>
+			</svg>
+		</div>
+		<!-- Libs JS -->
+		<script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+		<script src="./assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+		<!-- Theme JS -->
+		<script src="./assets/js/theme.min.js"></script>
+
+		<script src="./assets/libs/parallax-js/dist/parallax.min.js"></script>
+		<script src="./assets/js/vendors/parallax.js"></script>
+		<script src="./assets/libs/rellax/rellax.min.js"></script>
+		<script src="./assets/js/vendors/rellax.js"></script>
+		<!-- Swiper JS -->
+		<script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+		<script src="./assets/js/vendors/swiper.js"></script>
+		<script src="./assets/libs/scrollcue/scrollCue.min.js"></script>
+		<script src="./assets/js/vendors/scrollcue.js"></script>
+	</body>
+</html>

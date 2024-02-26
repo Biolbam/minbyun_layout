@@ -38,270 +38,121 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="./assets/css/mb_custom.css" />
 
-		<title>민변 blog Main</title>
+		<title>민변 Home</title>
 	</head>
-	<style>
-		#min_table {
-			table-layout: fixed;
-		}
-		#min_table th:nth-child(1) {
-			width: 20%;
-		}
-		#min_table th:nth-child(2) {
-			width: 60%;
-		}
-		#min_table th:nth-child(3) {
-			width: 20%;
-		}
-	</style>
 	<body>
-		<!-- Navbar -->
+		<!-- Navbar end -->
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light w-100">
-				<!-- <div class="container px-3"> -->
-				<a class="navbar-brand ms-4" href="./index.html"
-					><img
-						src="./assets/images/logo/logo.svg"
-						width="80%"
-						title="민변 홈"
-						alt="민변 홈"
-				/></a>
-				<button class="navbar-toggler offcanvas-nav-btn" type="button">
-					<i class="bi bi-list"></i>
-				</button>
-				<div
-					class="offcanvas offcanvas-start offcanvas-nav"
-					style="width: 20rem"
-				>
-					<div class="offcanvas-header">
-						<a href="./index.html" class="text-inverse"
-							><img
-								src="./assets/images/logo/logo.svg"
-								width="180px"
-								title="민변 홈"
-								alt="민변 홈"
-						/></a>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="offcanvas-body pt-0 align-items-center">
-						<ul class="navbar-nav mx-auto align-items-lg-center">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-									>소개</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a class="dropdown-item" href="#">역사</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">구성</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">회칙</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">오시는길</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-									>활동</a
-								>
+			<nav
+				class="navbar navbar-expand-lg w-100 bg-primary"
+				data-bs-theme="dark"
+			>
+				<div class="container-fluid" style="flex-wrap: nowrap">
+					<a class="navbar-brand" href="./index.html"
+						><img
+							src="./assets/images/logo/logo_short.svg"
+							width="23%"
+							title="민변 인트라넷"
+							alt="민변 인트라넷"
+						/><span class="ms-2 fw-semibold">회원전용사이트</span></a
+					>
+					<button class="navbar-toggler offcanvas-nav-btn" type="button">
+						<i class="bi bi-list"></i>
+					</button>
 
-								<div
-									class="dropdown-menu dropdown-menu-md"
-									aria-labelledby="navbarDropdown"
-								>
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-file-text fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">공지사항</h5>
-												<p class="mb-0 fs-6">행사일정과 주요공지</p>
-											</div>
-										</div>
-									</a>
-
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-clipboard fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">
-													성명·보도자료
-													<span class="text-primary ms-1" id="changelog"></span>
-												</h5>
-												<p class="mb-0 fs-6">최근 발표한 입장들</p>
-											</div>
-										</div>
-									</a>
-
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-clipboard fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">
-													민변뉴스
-													<span class="text-primary ms-1" id="changelog"></span>
-												</h5>
-												<p class="mb-0 fs-6">민변 사람들의 이야기</p>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-									>자료실</a
-								>
-								<div
-									class="dropdown-menu dropdown-menu-md"
-									aria-labelledby="navbarDropdown"
-								>
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-file-text fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">자료집</h5>
-												<p class="mb-0 fs-6">토론회 등 발표자료들</p>
-											</div>
-										</div>
-									</a>
-
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-clipboard fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">간행물</h5>
-												<p class="mb-0 fs-6">민변이 낸 책</p>
-											</div>
-										</div>
-									</a>
-
-									<a class="dropdown-item mb-3 text-body" href="#">
-										<div class="d-flex align-items-center">
-											<i class="bi bi-clipboard fs-4 text-primary"></i>
-											<div class="ms-3 lh-1">
-												<h5 class="mb-1">
-													BI
-													<span class="text-primary ms-1" id="changelog"></span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-									>공익인권변론센터</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a class="dropdown-item" href="#">소개</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">페이스북</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">월간변론 시선</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">공익변론신청</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-									>사법센터</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a class="dropdown-item" href="#">소개</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">인사말</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">성명·보도자료</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<!--search-->
-						<div class="col-md-2">
-							<form class="position-relative me-3">
-								<label for="searchInput" class="form-label visually-hidden"
-									>Search</label
-								>
-								<input
-									type="search"
-									class="form-control ps-6"
-									id="searchInput"
+					<div
+						class="offcanvas offcanvas-start offcanvas-nav"
+						style="width: 20rem"
+					>
+						<div class="offcanvas-header">
+							<a href="./index.html" class="text-inverse"
+								><img
+									src="./assets/images/logo/logo_short.svg"
+									width="70px"
+									title="민변 인트라넷"
+									alt="민변 인트라넷"
 								/>
-
-								<button type="submit" class="btn position-absolute bottom-0">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-search"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-										/>
-									</svg>
-								</button>
-							</form>
+								회원전용게시판</a
+							>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
 						</div>
-						<div class="mt-3 mt-lg-0 d-flex align-items-center">
-							<a href="./signup.html" class="btn btn-primary">입회신청</a>
+						<div class="offcanvas-body pt-0 align-items-center">
+							<ul class="navbar-nav mx-auto align-items-lg-center">
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle link-light"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										>메뉴가들어가는 부분입니다
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item link-light" href="#">역사</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">구성</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">회칙</a>
+										</li>
+										<li>
+											<a class="dropdown-item link-light" href="#">오시는길</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<!--search-->
 
-							<p class="mb-0 mx-3 d-none d-sm-none d-xxl-block">
-								<a href="#" class="strong small text-body-secondary"
+							<div class="col-md-2">
+								<form class="position-relative me-3 mt-lg-0 mt-3">
+									<label for="searchInput" class="form-label visually-hidden"
+										>Search</label
+									>
+									<input
+										type="search"
+										class="form-control ps-6 bg-dark"
+										id="searchInput"
+									/>
+
+									<button type="submit" class="btn position-absolute top-0">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-search"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+											/>
+										</svg>
+									</button>
+								</form>
+							</div>
+							<div class="mt-3 mt-lg-0 d-flex align-items-center">
+								<a href="#" class="btn btn-dark me-2">로그인</a>
+
+								<a href="#" class="btn btn-outline-secondary btn-sm me-2"
 									>회원가입</a
 								>
-							</p>
-							<p class="me-5 mb-0 d-none d-sm-none d-xxl-block">
-								<a href="#" class="strong small text-body-secondary">EN</a>
-							</p>
+								<a href="#" class="btn btn-outline-secondary btn-sm me-4"
+									>민변홈</a
+								>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- </div> -->
 			</nav>
 		</header>
+		<!-- Navbar end-->
 
 		<main>
 			<div class="pattern-square"></div>
@@ -626,21 +477,35 @@
 								<nav aria-label="Page navigation example">
 									<ul class="pagination justify-content-center">
 										<li class="page-item">
-											<a class="page-link" href="#" aria-label="Previous">
+											<a
+												class="page-link link-body-emphasis"
+												href="#"
+												aria-label="Previous"
+											>
 												<span aria-hidden="true">&laquo;</span>
 											</a>
 										</li>
 										<li class="page-item">
-											<a class="page-link" href="#">1</a>
+											<a class="page-link link-body-emphasis" href="#"
+												><small>1</small></a
+											>
 										</li>
 										<li class="page-item">
-											<a class="page-link" href="#">2</a>
+											<a class="page-link link-body-emphasis" href="#"
+												><small>2</small></a
+											>
 										</li>
 										<li class="page-item">
-											<a class="page-link" href="#">3</a>
+											<a class="page-link link-body-emphasis" href="#"
+												><small>3</small></a
+											>
 										</li>
 										<li class="page-item">
-											<a class="page-link" href="#" aria-label="Next">
+											<a
+												class="page-link link-body-emphasis"
+												href="#"
+												aria-label="Next"
+											>
 												<span aria-hidden="true">&raquo;</span>
 											</a>
 										</li>
@@ -840,16 +705,22 @@
 						<div class="small">
 							민주사회를 위한 변호사 모임 © 1988-2024 Some Rights Reserved
 
-							<span class="text-primary"
-								><a href="https://creativecommons.org/licenses/by-nc/4.0/"
+							<span
+								><a
+									href="https://creativecommons.org/licenses/by-nc/4.0/"
+									class="link-body-emphasis"
 									>CC BY-NC 4.0</a
 								></span
 							>
 						</div>
 						<div class="small mb-3 mb-md-0">
-							<span class="text-primary"><a href="#">이용약관</a></span>
+							<span><a href="#" class="link-body-emphasis">이용약관</a></span>
 							|
-							<span class="text-primary"><a href="#">개인정보처리방침</a></span>
+							<span
+								><a href="#" class="link-body-emphasis"
+									>개인정보처리방침</a
+								></span
+							>
 						</div>
 					</div>
 					<div class="col-md-3">
